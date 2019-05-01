@@ -16,8 +16,16 @@ import com.ctech.amir.beatbox.databinding.ListItemSoundBinding;
 
 public class BeatBoxFragment extends Fragment {
 
+    private BeatBox mBeatBox;
+
     public static BeatBoxFragment newInstance() {
         return new BeatBoxFragment();
+    }
+
+    @Override public void  onCreate(Bundle savedInstancesState) {
+        super.onCreate(savedInstancesState);
+
+        mBeatBox = new BeatBox(getActivity());
     }
 
     @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
