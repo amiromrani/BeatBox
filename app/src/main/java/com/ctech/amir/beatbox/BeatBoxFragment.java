@@ -57,6 +57,10 @@ public class BeatBoxFragment extends Fragment {
 
         private List<Sound> mSoundList;
 
+        public SoundAdapter(List<Sound> sounds) {
+            mSoundList = sounds;
+        }
+
 
 
 
@@ -78,7 +82,7 @@ public class BeatBoxFragment extends Fragment {
 
         @Override
         public int getItemCount() {
-            return 0;
+            return mSoundList.size();
         }
     }
 
