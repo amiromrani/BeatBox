@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import com.ctech.amir.beatbox.databinding.FragmentBeatBoxBinding;
 import com.ctech.amir.beatbox.databinding.ListItemSoundBinding;
 
+import java.util.List;
+
 
 public class BeatBoxFragment extends Fragment {
 
@@ -52,6 +54,13 @@ public class BeatBoxFragment extends Fragment {
     }
 
     private class SoundAdapter extends RecyclerView.Adapter<SoundHolder>{
+
+        private List<Sound> mSoundList;
+
+
+
+
+
         @NonNull
         @Override
         public SoundHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
